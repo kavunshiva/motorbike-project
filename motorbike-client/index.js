@@ -3,6 +3,7 @@ $( document ).ready(function(){
   $('#create-bike').submit(function(event) {
     event.preventDefault()
     let values = $(this).serialize()
+    $(':input', this).not(':button, :submit').val('')
     $.ajax({
       type: "POST",
       data: values,
