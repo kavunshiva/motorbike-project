@@ -5,5 +5,17 @@ class Api::V1::BikesController < ApplicationController
   end
 
   def create
+    @bike = Bike.new(bike_params(:brand, :style, :cc, :year))
+    if @bike.save
+      render json: @bike
+    else
+      render plain: "bike didn't save"
+    end
+  end
+
+  private
+
+  def bike_params(*args)
+    params.permit(*args)
   end
 end
