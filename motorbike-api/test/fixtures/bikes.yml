@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  brand: MyString
+  type: 
+  cc: 1
+  year: 1
+
+two:
+  brand: MyString
+  type: 
+  cc: 1
+  year: 1
