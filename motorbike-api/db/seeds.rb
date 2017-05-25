@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 Bike.create(
-  brand: "Apollo",
+  brand: "BMW",
   style: "dirt",
   cc: 250,
   year: 2015
@@ -27,7 +27,7 @@ Bike.create(
 )
 
 Bike.create(
-  brand: "Indian",
+  brand: "Suzuki",
   style: "chopper",
   cc: 500,
   year: 1969
