@@ -16,6 +16,6 @@ class Api::V1::BikesController < ApplicationController
   private
 
   def bike_params(*args)
-    params.permit(*args)
+    params.require(:bike).permit(*args)
   end
 end

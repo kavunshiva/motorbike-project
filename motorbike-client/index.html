@@ -11,14 +11,14 @@
    <div class='container'>
 
      <h1>Motorbikes!!</h1>
-     
+
      <div class='row'>
 
        <div class='col s2'>
 
           <form id="create-bike">
             <label>Brand:</label>
-            <select class="browser-default" name="brand">
+            <select class="browser-default" name="bike[brand]">
               <option value="Harley-Davidson">Harley-Davidson</option>
               <option value="BMW">BMW</option>
               <option value="Yamaha">Yamaha</option>
@@ -26,11 +26,11 @@
             </select>
 
             <label>Style:</label>
-            <input type='text' name="style" placeholder="Style e.g 'Chopper'" /><br/>
+            <input type='text' name="bike[style]" placeholder="Style e.g 'Chopper'" /><br/>
             <label>CC's:</label>
-            <input type='text' name="cc" placeholder="CC e.g '500'" /> <br/>
+            <input type='text' name="bike[cc]" placeholder="CC e.g '500'" /> <br/>
             <label>Year:</label>
-            <input type='text' name="year" placeholder="Year e.g '2009'" /> <br/>
+            <input type='text' name="bike[year]" placeholder="Year e.g '2009'" /> <br/>
 
             <input type="submit" value="Make a New Bike" />
           </form>
