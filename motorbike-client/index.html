@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Motorbikes</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css" /> -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -15,9 +15,17 @@
      <div class='row'>
 
        <div class='col s4'>
-          <form id="create-bike">
+
             <label>Brand:</label>
-            <input type='text' name="brand" placeholder="Brand e.g. 'Harley-Davidson'" /> <br/>
+            <!-- <input type='text' name="brand" placeholder="Brand e.g. 'Harley-Davidson'" /> <br/> -->
+            <select name="brand" form="create-bike" >
+               <option value="Harley-Davidson">Harley-Davidson</option>
+               <option value="BMW">BMW</option>
+               <option value="Yamaha">Yamaha</option>
+               <option value="Suzuki">Suzuki</option>
+            </select> <br/>
+
+            <form id="create-bike">
             <label>Style:</label>
             <input type='text' name="style" placeholder="Style e.g 'Chopper'" /><br/>
             <label>CC's:</label>
@@ -29,11 +37,18 @@
           </form>
         </div>
 
-       <div class='col s8'>
+        <div class='col s4'>
           <ul id="bikes">
           </ul>
         </div>
+
+        <div class="col s4">
+          <img src="" id="bike-image" alt="">
+        </div>
+
       </div>
+
+
     </div>
 
 
