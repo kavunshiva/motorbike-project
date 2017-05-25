@@ -10,7 +10,6 @@ $( document ).ready(function(){
       url: "http://localhost:3000/api/v1/bikes",
       success: function(bike) {
         $('#bikes').append(`<li id="${bike.id}"><strong>Brand:</strong> ${bike.brand}, <strong>Style:</strong> ${bike.style}, <strong>CC's:</strong> ${bike.cc}, <strong>Year:</strong> ${bike.year}</li>`)
-        debugger
         $(`#${bike.id}`).mouseover(displayImage)
         $(`#${bike.id}`).mouseout(dropImage)
       }

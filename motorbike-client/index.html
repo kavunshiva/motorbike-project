@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Motorbikes</title>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css" /> -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css" />
   </head>
   <body>
 
@@ -16,16 +17,36 @@
 
        <div class='col s4'>
 
-            <label>Brand:</label>
+
             <!-- <input type='text' name="brand" placeholder="Brand e.g. 'Harley-Davidson'" /> <br/> -->
-            <select name="brand" form="create-bike" >
+            <!-- <select name="brand" form="create-bike" >
                <option value="Harley-Davidson">Harley-Davidson</option>
                <option value="BMW">BMW</option>
                <option value="Yamaha">Yamaha</option>
                <option value="Suzuki">Suzuki</option>
-            </select> <br/>
+            </select> <br/> -->
+            <!-- Dropdown Trigger -->
+            <!-- <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Drop Me!</a>
 
-            <form id="create-bike">
+            Dropdown Structure
+            <ul id='dropdown1' class='dropdown-content'>
+              <li><a href="#!">one</a></li>
+              <li><a href="#!">two</a></li>
+              <li class="divider"></li>
+              <li><a href="#!">three</a></li>
+              <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+              <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+            </ul> -->
+
+          <form id="create-bike">
+            <label>Brand:</label>
+            <select class="browser-default" name="brand">
+              <option value="Harley-Davidson">Harley-Davidson</option>
+              <option value="BMW">BMW</option>
+              <option value="Yamaha">Yamaha</option>
+              <option value="Suzuki">Suzuki</option>
+            </select>
+
             <label>Style:</label>
             <input type='text' name="style" placeholder="Style e.g 'Chopper'" /><br/>
             <label>CC's:</label>
